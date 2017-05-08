@@ -1,0 +1,32 @@
+.nav-tabs{
+  background-color:#337ab7;
+}
+.nav-tabs > li > a{
+  border: medium none;
+  color: white;
+  border-bottom: 5px solid #f0ad4e !important;
+}
+.nav-tabs > li > a:hover{
+  background-color: #f0ad4e !important;
+    border: medium none;
+    border-radius: 0;
+    color:#fff;
+}
+
+.nav-tabs .nav-link.active {
+	background-color: 	#0f5b9e !important;
+	
+}
+
+.nav-tabs .nav-link.active {
+	background-color:black;
+}
+
+section {
+  flex: 1;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+
+

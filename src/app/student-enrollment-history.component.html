@@ -1,0 +1,24 @@
+<header >
+</header>
+<div>
+
+	<ngb-accordion *ngFor="let history of enrollmentHistory">
+    <ngb-panel>
+    <ng-template ngbPanelTitle>From {{history.entryDate |date: 'shortDate'}} To {{history.exitDate |date: 'shortDate'}}</ng-template> 
+    <ng-template ngbPanelContent>
+    <p>
+    Date of Entry: {{history.entryDate}}
+    </p>
+    <p>
+    Date of Exit: {{history.exitDate}}
+    </p>
+    <p>
+    Exit Reason: {{history.exitReason}}
+    </p>
+    </ng-template>
+   </ngb-panel>
+   </ngb-accordion> 
+</div>
+<footer>
+
+</footer>

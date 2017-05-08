@@ -1,0 +1,27 @@
+<header >
+</header>
+<div>
+
+	<ngb-accordion *ngFor="let history of gradeHistory">
+    <ngb-panel>
+    <ng-template ngbPanelTitle>Assignment {{history.assignmentName}}</ng-template> 
+    <ng-template ngbPanelContent>
+    <p>
+    Max Possible Grade: {{history.maxScore}}
+    </p>
+    <p>
+    Due Date: {{history.dueDate |date: 'shortDate'}}
+    </p>
+    <p>
+    Completion Date: {{(history.completionDate |date: 'shortDate') || "Pending"}}
+    </p>
+    <p *ngIf="history.completionDate">
+    Grade: {{history.scoreEarned}} / {{history.maxScore}}
+    </p>
+    </ng-template>
+   </ngb-panel>
+   </ngb-accordion>  
+</div>
+<footer>
+
+</footer>

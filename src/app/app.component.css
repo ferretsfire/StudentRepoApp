@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 68px;
+  background-color: #0f5b9e;
+}
+nav .icon {
+  width: 50px;
+  height: 44px;
+  margin: 6px;
+  padding-top: 2px;
+}
+section {
+  width: 100%;
+  background-color: #323232;
+}
+section > header {
+  color: white;
+  padding: 10px;
+}
+section > header > h1 {
+  font-size: 2em;
+    border-bottom: 5px solid #f0ad4e !important;
+  display: inline-block;
+}
+section > header .description {
+  font-style: italic;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    color: #fff;
+    cursor: default;
+	background-color:#fdb23e !important;
+	}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+    color: #fff;
+    cursor: default;
+	background-color:#fdb23e !important;
+	}
+
+.nav-pills .nav-link.active, .nav-pills .nav-item.show .nav-link {
+    color: #fff;
+    cursor: default;
+	background-color:#fdb23e !important;
+	}
+
+
+

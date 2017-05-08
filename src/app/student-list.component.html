@@ -1,0 +1,47 @@
+<header >
+</header>
+ <section>
+ 
+ 
+<ngb-tabset type="pills" >
+<ngb-tab *ngFor="let student of studentList">
+ <ng-template  ngbTabTitle ><div style="color:white;" >{{ student.firstName + " " + student.lastName }}</div></ng-template>
+     <ng-template ngbTabContent>
+     <div class="alert alert-info" style="background-color: white">
+		<p>Student Grade {{ student.grade}}<p>
+		<p>School Name {{ student.schoolName }}</p>
+		<p>Student ID {{ student.studentId }}</p>
+	</div>
+	<div class="alert alert-info" style="background-color: white">
+	<div class="container">
+
+  	
+  	<ul class="nav nav-tabs" role="tablist">
+	  <li class="nav-item">
+	    <a class="nav-link" data-toggle="tab" data-target="#enrollments" role="tab">Enrollment History</a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link" data-target="#grades" role="tab" data-toggle="tab">Grade History </a>
+	  </li>
+	</ul>
+	
+	<div class="tab-content">
+	  <div role="tabpanel" class="tab-pane fade" id="enrollments">
+	     <enrollment-history-list [studentId] = 'student.studentId'></enrollment-history-list>
+	  </div>
+	  <div role="tabpanel" class="tab-pane fade" id="grades">	  	
+	  <grade-history-list [studentId] = 'student.studentId' ></grade-history-list>
+	  </div>
+	</div>
+	
+		
+</div>
+
+	</div>
+    </ng-template>
+  </ngb-tab>
+</ngb-tabset>
+
+
+</section>
+
